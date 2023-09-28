@@ -1,0 +1,127 @@
+ <!-- File Name: contact.ejs
+      Student Name: Manjula Subramaniam
+      Student ID: 301277582
+      Date: 28 September 2023 -->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1>Contact Me</h1>
+    <p>Get in touch with me</p>
+  </div>
+
+  <!-- Contact Information Panel -->
+  <section class="contact-info">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Contact Information</h3>
+      </div>
+      <div class="panel-body">
+        <!-- Include your contact information here -->
+        <p>Name: Manjula Subramaniam</p>
+        <p>Email: manjulasubramaniam.ms@outlook.com</p>
+        <p>Phone: +1(647)4735848</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <form action="/contact" method="post">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="submitform">
+        <button class="submitbtn" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+<style>
+
+  /* Contact Page Styles */
+  .contact-info {
+    margin-top: 20px;
+    text-align:justify;
+  }
+
+  .contact-info .panel {
+    border: 2px solid #5d4066;
+    border-radius: 10px; /* Increase border-radius for a rounded box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Update the box shadow for a softer effect */
+    max-width:max-content;
+  }
+
+  .contact-form {
+  margin-top: 20px;
+  background-color: #987aa2d6; /* Set background color */
+  padding: 20px;
+  border-radius: 10px; /* Increase border-radius for a rounded box */
+  border-color: #5d4066;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Update the box shadow for a softer effect */
+  margin-bottom: 40px;
+  max-width: 800px; /* Adjust the max-width as needed for a broader form */
+  
+}
+
+  .contact-form form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    border: 2px solid #5d4066;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .submitform {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .submitbtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #5d4066;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .submitbtn:hover {
+    background-color: #5f165d84;
+  }
+</style>

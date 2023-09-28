@@ -1,0 +1,41 @@
+ <!-- File Name: main_nav.ejs
+      Student Name: Manjula Subramaniam
+      Student ID: 301277582
+      Date: 28 September 2023 -->
+      
+<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/img/logo1.png" alt="Logo" width="130" height="80">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item <%= title === 'Home' ? 'active' : '' %>">
+          <a class="nav-link" href="/"><i class="fas fa-laptop-house"></i> Home</a>
+        </li>
+        <li class="nav-item <%= title === 'About' ? 'active' : '' %>">
+          <a class="nav-link" href="/about"><i class="fa-address-card"></i> About</a>
+        </li>
+        <li class="nav-item <%= title === 'Projects' ? 'active' : '' %>">
+          <a class="nav-link" href="/projects"><i class="fa-projects-hunt"></i> Projects</a>
+        </li>
+        <li class="nav-item <%= title === 'Services' ? 'active' : '' %>">
+          <a class="nav-link" href="/services"><i class="fa-servicestack"></i> Services</a>
+        </li>
+        <li class="nav-item <%= title === 'Contact' ? 'active' : '' %>">
+          <a class="nav-link" href="/contact"><i class="fa-address-book"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<style>
+  .bg-custom {
+    background-color: #5d4066; /* Replace with your desired background color */
+}
+</style>

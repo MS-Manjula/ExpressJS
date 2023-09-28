@@ -1,0 +1,91 @@
+ <!-- File Name: services.ejs
+      Student Name: Manjula Subramaniam
+      Student ID: 301277582
+      Date: 28 September 2023 -->
+      
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+    <div class="jumbotron">
+        <h1>Welcome to <%= title %> Page</h1>
+    </div>
+
+    <!-- New section for displaying services and images -->
+    <section class="services">
+        <h2>Services Offered</h2>
+        <div class="service-row">
+            <div class="service-item">
+                <img src="/img/appsupport.png" alt="Application Support">
+                <h3>Application Support (Functional and Technical)</h3>
+                <p>With over 8 years of hands-on experience, I specialize in comprehensive Application Support services. I ensure your software runs smoothly, addressing any issues or challenges, from troubleshooting to system enhancements. My service guarantees reliability, letting you focus on your core business.</p>
+            </div>
+            <div class="service-item">
+                <img src="/img/consulting.png" alt="Consulting">
+                <h3>Consulting</h3>
+                <p>With an MBA from the National University of Malaysia, I offer expert consulting services for navigating complex business challenges. My education, combined with practical experience, equips me to provide strategic insights that drive growth and efficiency. Let's collaborate to unlock your business's full potential.</p>
+            </div>
+        </div>
+        
+        <div class="service-row">
+            <div class="service-item">
+                <img src="/img/projectmgt.png" alt="Project Management">
+                <h3>Project Management</h3>
+                <p>While I may not have direct project management experience, I bring valuable insights from my involvement in a critical GST project's support aspect. I'm equipped to assist in project oversight, task delegation, and ensuring seamless communication. Let's collaborate to drive your projects forward.</p>
+            </div>
+            <div class="service-item">
+                <img src="/img/servicemgt.png" alt="ITIL Service Management">
+                <h3>ITIL Service Management</h3>
+                <p>As a certified ITIL 4 Foundation professional, I offer expertise in aligning your organization's IT processes with business goals. I can help optimize service delivery, streamline operations, and enhance customer satisfaction. Let's work together to elevate your IT service management and drive value for your organization.</p>
+            </div>
+        </div>
+        
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+<style>
+    /* Style for the Services Section */
+.services {
+    margin-top: 20px;
+}
+
+/* Style for each Service Row */
+.service-row {
+    display: flex; /* Display items in a row */
+    justify-content: space-between; /* Space evenly between items */
+    margin-bottom: 20px; /* Add some margin between rows */
+}
+
+/* Style for each Service Item */
+.service-item {
+    flex: 0 0 calc(50% - 10px); /* Each item takes up 50% of the row with a little spacing */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-color: #5d4066;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+/* Style for the service item image */
+.service-item img {
+    max-width: 300px; /* Adjust the image max-width as needed */
+}
+
+/* Style for the service item heading */
+.service-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+</style>
+
+
+
+   

@@ -1,0 +1,67 @@
+ <!-- File Name: header.ejs
+      Student Name: Manjula Subramaniam
+      Student ID: 301277582
+      Date: 28 September 2023 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
+
+    <style>
+        ul.navbar-max {
+            list-style: none; /* Remove the bullet */
+            display: inline; /* Display the list items inline */
+            float: right;
+        }
+    
+        ul.navbar-max li {
+            display: inline-block; /* Make the list items display inline */
+            margin-right: 20px; /* Add spacing between list items */
+            font-size: 20px;
+        }
+    
+        ul.navbar-max li:last-child {
+            margin-right: 0; /* Remove margin for the last list item */
+        }
+    
+        a:link,
+        a:visited {
+            text-decoration: underline; /* Remove underlines for visited links */
+            color: #fff; /* Set link color to white */
+            transition: color 0.3s; /* Add a smooth color transition effect */
+        }
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  flex: 1;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+    </style>
+
+
+</head>
+<body>

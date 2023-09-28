@@ -1,0 +1,80 @@
+ <!-- File Name: projects.ejs
+      Student Name: Manjula Subramaniam
+      Student ID: 301277582
+      Date: 28 September 2023 -->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+    <div class="jumbotron">
+        <h1>Welcome to <%= title %> Page</h1>
+    </div>
+    
+    <div class="project-row">
+        <div class="project-item">
+            <img src="/img/real-estate.png" alt="Real Estate Website">
+            <p>Designed and developed a real estate website using HTML and CSS</p>
+            <p>Role: Front-End Developer | Outcome: Strong portfolio addition</p>
+        </div>
+        <div class="project-item">
+            <img src="/img/game.png" alt="Bug Catching Game">
+            <p>Created an interactive bug-catching game using JavaScript. Demonstrated game development abilities.</p>
+            <p>Role: Game Developer | Outcome: Positive player feedback</p>
+        </div>
+    </div>
+
+    <div class="project-row">
+        <div class="project-item">
+            <img src="/img/pizza.png" alt="Pizza Ordering GUI">
+            <p>Developed a user-friendly pizza ordering GUI in C#. Enhanced software development proficiency.</p>
+            <p>Role: Software Developer | Outcome: Improved ordering efficiency</p>
+        </div>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+<style>
+    .project-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+
+.project-item {
+    flex: 0 0 calc(50% - 10px);
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border: 2px solid #5d4066;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Style for role and outcome text */
+.project-item p:last-child {
+    font-size: 13px;
+    color: #777;
+}
+
+</style>

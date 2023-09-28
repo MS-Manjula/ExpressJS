@@ -1,0 +1,89 @@
+ <!-- File Name: index.ejs
+      Student Name: Manjula Subramaniam
+      Student ID: 301277582
+      Date: 28 September 2023 -->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+    <div class="jumbotron" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <!-- Logo -->
+        <img src="/img/logo1.png" alt="Logo" width="35%" style="border-radius: 5%;">
+        <h1 class="header-text">Hi, I'm Manjula</h1>
+        
+        <!-- Mission Statement -->
+        <div class="mission-box">
+        <h2>Mission</h2>
+        <p>
+            I am on a mission to empower organizations through data-driven insights. 
+            My goal is to harness the power of analytics and knowledge to help businesses 
+            make informed decisions, optimize their operations, and achieve unprecedented 
+            success. I'm committed to a culture of continuous learning and unwavering 
+            dedication, with the aim of contributing to the growth and prosperity of 
+            the organizations I serve.
+        </p>
+        </div>
+        <!-- End of Mission Statement -->
+         <!-- Buttons -->
+         <div class="button-container">
+            <!-- Buttons -->
+            <a href="/about" class="btn btn-primary">About Me</a>
+            <a href="/contact" class="btn btn-secondary">Contact</a>
+        </div>
+    </div>
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
+
+<style>
+
+    /* CSS for the Header Text */
+.header-text {
+    margin-top: 20px; /* Add spacing above the <h1> element */
+    margin-bottom: 20px; /* Add spacing below the <h1> element */
+}
+
+     /* CSS for the Mission Box */
+     .mission-box {
+        background-color: #5d4066; /* Background color for the box */
+        padding: 20px; /* Add padding inside the box */
+        border-radius: 5px; /* Add rounded corners to the box */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        margin-top: 20px;
+    }
+
+    /* CSS for the Mission Statement */
+    .mission-box h2 {
+        font-size: 30px; /* Adjust the heading font size */
+        text-align: center; 
+        color: #ffffff;
+  
+    }
+
+    .mission-box p {
+        font-size: 16px; /* Adjust the paragraph font size */
+        color: #ffffff; /* Paragraph text color */
+    }
+        /* CSS for the Button Container */
+    .button-container {
+        text-align: center; /* Center-align the buttons */
+        margin-top: 20px; /* Add margin to separate from the mission statement */
+    }
+
+    .button-container a.btn {
+    margin: 10px; /* Add margin around each button */
+    background-color: #5d4066;
+    color: #fff; /* Text color for buttons */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.button-container a.btn:hover {
+    background-color: #8a5c8a; /* Light purple color on hover */
+}
+</style>
+
+
+
+
+   
